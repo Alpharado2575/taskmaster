@@ -50,7 +50,7 @@ export default function Register({ setPage }) {
     setMessage("");
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", {
+      await axios.post("https://be-taskmaster.vercel.app/", {
         username: formData.username,
         password: formData.password,
       });

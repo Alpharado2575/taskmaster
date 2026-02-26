@@ -12,7 +12,7 @@ export default function Dashboard({ setToken }) {
   const [deleteConfirmId, setDeleteConfirmId] = useState(null);
 
   const api = axios.create({
-    baseURL: "http://localhost:5000/api/tasks",
+    baseURL: "https://be-taskmaster.vercel.app/",
     headers: {
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
